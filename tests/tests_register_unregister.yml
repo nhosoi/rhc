@@ -6,6 +6,7 @@
   become: true
   tags:
     - tests::slow
+    - tests::container_resource_busy
   tasks:
     - name: Setup Candlepin
       import_tasks: tasks/setup_candlepin.yml

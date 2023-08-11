@@ -6,6 +6,7 @@
   become: true
   tags:
     - tests::slow
+    - tests::container_resource_busy
   vars:
     __proxy_port_list:
       - "{{ lsr_rhc_test_data.proxy_noauth_port }}"
